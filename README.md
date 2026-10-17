@@ -18,3 +18,6 @@ docker run -d -p 8080:80 --name cloudtech-dashboard static-website-cicd:v1
 ```
 
 To view the live running instance locally, navigate to `http://localhost:8080` in your web browser.
+
+echo -e "\n## Cloud Image Registry Convention\nImages are tagged and uploaded following this format:\n\`chomolly123/static-website-cicd:TAG\`\nWhere \`TAG\` represents an immutable Git commit SHA." >> README.md
+git add README.md && git commit -m "docs: append image registry naming rules to README" && git push origin main
