@@ -1,0 +1,14 @@
+# IDE and Local Editor Configurations
+.vscode/
+.idea/
+*.swp
+
+# OS System Overhead Files
+.DS_Store
+Thumbs.db
+
+# SECURITY: Absolute enforcement to block tracking credentials and secrets
+*.key
+*.pem
+credentials*
+id_rsa
