@@ -5,3 +5,16 @@ This repository houses the customized static admin dashboard configuration deplo
 ## Built Workflow Features
 * Automated image layer optimization using containerized Docker engines.
 * Complete 7-stage automated delivery architecture mapped via a Jenkins Declarative Pipeline script.
+## Local Docker Testing Workflow
+
+The following commands were utilized to containerize and locally verify the static website application:
+
+```bash
+# Build the Docker image using the lightweight Nginx Alpine base image
+docker build -t static-website-cicd:v1 .
+
+# Run the container in detached mode and map host port 8080 to container port 80
+docker run -d -p 8080:80 --name cloudtech-dashboard static-website-cicd:v1
+```
+
+To view the live running instance locally, navigate to `http://localhost:8080` in your web browser.
